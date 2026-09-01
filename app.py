@@ -24,7 +24,8 @@ def init_connection():
     
     # スプレッドシート名（またはID）を指定して開く
     # ※あらかじめ作成したスプレッドシート名に書き換えてください
-    sheet = client.open("PTA旗振り予約管理").sheet1
+    spreadsheet_id = "1YIxlFe9gix5S-S_tN8ySvAz8RIx89kR3kx5nfgchWTo"
+    sheet = client.open_by_key(spreadsheet_id).sheet1
     return sheet
 
 sheet = init_connection()
