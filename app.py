@@ -20,7 +20,7 @@ def init_connection():
     client = gspread.authorize(creds)
     
     # スプレッドシートIDを指定
-    spreadsheet_id = "1YlxIfe9gix5S-S_tN8ySvAz8Rlx89kR3kx5nfqchWTO"
+    spreadsheet_id = "1YIxlFe9gix5S-S_tN8ySvAz8RIx89kR3kx5nfgchWTo"
     sheet = client.open_by_key(spreadsheet_id).sheet1
     return sheet
 
